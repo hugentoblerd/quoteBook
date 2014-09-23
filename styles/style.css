@@ -1,7 +1,7 @@
 html, body {
   text-align: center;
   font-family: 'Rock Salt', cursive;
-  font-size: 1rem;
+  font-size: .9rem;
   background-image: url('../images/stained.jpg');
   background-size: 100%;
 }
@@ -22,7 +22,33 @@ html, body {
   font-size: .7rem;
 }
 
-.list-container {
+#input-options button {
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, .25);
+  color: white;
+  font-size: .7rem;
+}
+
+button {
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, .25);
+  color: white;
+  font-size: .7rem;
+}
+
+input {
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, .25);
+  color: white;
+  font-size: .5rem;
+}
+
+::-webkit-input-placeholder {
+  font-size: .9rem;
+  color: white;
+}
+
+.body-container {
   margin-right:  60%;
   margin-left: 20%;
   margin-top: 1.5%;
@@ -30,16 +56,26 @@ html, body {
   font-family: 'Rock Salt', cursive;
 }
 
-.list-container div {
+.body-container div {
   margin-top: 1%;
+}
+
+.quote-container {
+margin-bottom: 10%;
 }
 
 .quote-text {
 text-align: left;
+background-color: rgba(255, 255, 255, .5);
+/*background-image: url('../images/ancient.png');*/
+border-radius: 5px;
+min-height: 24px;
+/*opacity: 0.5;*/
 }
 
 .quote-author {
   text-align: right;
+  /*margin-top: 100px;*/
   /*margin-right: 50%;*/
 }
 

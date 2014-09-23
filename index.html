@@ -21,17 +21,17 @@
             <input type="text" placeholder="quote" ng-model="quote.text">
             Author:
             <input type="text" placeholder="author" ng-model="quote.author">
-            <button ng-click="addQuote()">Submit</button>
+            <button class="btn btn-default btn-sm" ng-click="addQuote()">Submit</button>
           </div>
           <div ng-show="showFilter">
               Filter:
               <input type="text" placeholder="filter" ng-model="searchTerm">
             </div>
           </div>
-        <div class="list-container">
+        <div class="body-container">
           <div>
-            <div ng-repeat="quote in quotes | filter: searchTerm">
-              <div class="quote-text "><i class="quote-author fa fa-quote-left fa-2x pull-left fa-border"></i>{{quote.text}}</div>
+            <div class="quote-container" ng-repeat="quote in quotes | filter: searchTerm">
+              <div class="quote-text "><i class="quote-author fa fa-quote-left fa-2x pull-left"></i>{{quote.text}}</div>
               <div  class="quote-author">
                 - {{quote.author}}
                 <i class="fa fa-trash" ng-really-message="You really want to delete this?" ng-really-click="removeQuote(quote)"></i>
