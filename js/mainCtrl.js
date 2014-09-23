@@ -4,7 +4,7 @@ app.controller('mainCtrl', function ($scope, dataService) {
 // empty object
   $scope.quote = {};
 
-// 
+// empty string for Filter
   $scope.searchTerm = '';
 
 // grabs the quotes data from dataService and makes it available on the $scope
@@ -54,9 +54,12 @@ app.controller('mainCtrl', function ($scope, dataService) {
     $scope.showRemove = false;
   }
 
-// filters quote
 
 
 
 
 });
+
+
+
+
