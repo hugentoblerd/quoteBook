@@ -1,0 +1,57 @@
+html, body {
+  text-align: center;
+  font-family: 'Rock Salt', cursive;
+  font-size: 1rem;
+  background-image: url('../images/stained.jpg');
+  background-size: 100%;
+}
+
+#header {
+  text-decoration: underline;
+}
+
+.button-container {
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
+} 
+
+.button-container button {
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, .25);
+  color: white;
+  font-size: .7rem;
+}
+
+.list-container {
+  margin-right:  60%;
+  margin-left: 20%;
+  margin-top: 1.5%;
+  font-size: .9rem;
+  font-family: 'Rock Salt', cursive;
+}
+
+.list-container div {
+  margin-top: 1%;
+}
+
+.quote-text {
+text-align: left;
+}
+
+.quote-author {
+  text-align: right;
+  /*margin-right: 50%;*/
+}
+
+.fa-trash {
+  margin-left: 1%;
+  cursor: pointer;
+}
+
+i:hover {
+  
+}
+
+
+
+
