@@ -26,7 +26,7 @@
 
   this.removeData = function (obj) {
     for (var i = 0; i < quotes.length; i++) {
-      if (quotes[i].text === obj) {
+      if (quotes[i] === obj) {
         quotes.splice(i, 1);
       };
     };

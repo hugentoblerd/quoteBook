@@ -46,12 +46,12 @@ app.controller('mainCtrl', function ($scope, dataService) {
   }
 
 // removes quote object on $scope from the services array of quotes
-  $scope.removeQuote = function () {
-    dataService.removeData($scope.quote.text);
+  $scope.removeQuote = function (obj) {
+    dataService.removeData(obj);
     // removes object on quote so we can add other quotes
-    $scope.quote = {};
+    // $scope.quote = {};
     // hides the quote input and submit
-    $scope.showRemove = false;
+    // $scope.showRemove = false;
   }
 
 
