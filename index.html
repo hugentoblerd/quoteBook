@@ -7,10 +7,28 @@
   <body ng-controller="mainCtrl">
     <h2>My Fave Quotes</h2>
     <div>
-      <!-- <button ></button> -->
+      <button ng-click="showAddQuote()">Add Quote</button>
+        <div ng-show="showAdd">
+          Quote:
+          <input type="text" placeholder="quote" ng-model="quote.text">
+          Author:
+          <input type="text" placeholder="author" ng-model="quote.author">
+          <button ng-click="addQuote()">Submit</button>
+        </div>
+      <button ng-click="showRemoveQuote()">Remove Quote</button>
+      <div ng-show="showRemove">
+          Enter the Quote you would Like to Remove:
+          <input type="text" placeholder="quote" ng-model="quote.text">
+          <button ng-click="removeQuote()">Remove</button>
+        </div>
+      <button ng-click="showFilterQuote()">Filter</button>
+      <div ng-show="showFilter">
+          Filter:
+          <input type="text" placeholder="filter" ng-model="searchTerm">
+        </div>
     </div>
     <ul>
-      <li ng-repeat="quote in quotes"> {{quote.text}} -{{quote.author}} </li>
+      <li ng-repeat="quote in quotes | filter: searchTerm"> {{quote.text}} -{{quote.author}} </li>
     </ul>
 
     <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>

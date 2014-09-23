@@ -16,18 +16,19 @@
   };
 
   this.addData = function (obj) {
-    if (obj.text && obj.author) {
+    if ( obj && obj.text && obj.author) {
       quotes.push(obj);
-    }else if (obj.text) {
+    }else if (obj && obj.text) {
       obj.author = 'anonymous';
       quotes.push(obj);
     };
   };
 
   this.removeData = function (obj) {
-    var i = quotes.indexOf(obj.text);
-    if (i !== -1) {
-      quotes.splice(i, 1);
+    for (var i = 0; i < quotes.length; i++) {
+      if (quotes[i].text === obj) {
+        quotes.splice(i, 1);
+      };
     };
   };
 

@@ -63,12 +63,11 @@ Now that your service is set up, let's inject your service in to your controller
 <!-- * Once the quotes data is on your scope, use ng-repeat to loop over that data in  your index.html page and display it. -->
 
 ##Step 4: Add Options to Filter, Add, and Remove Items from your Quotes Array
-* Create three buttons, Add Quote, Remove Quote, and Filter Quotes
-* Using ng-click and the methods we set up on our dataService object earlier, make those three buttons do the appropriate action.
-* Once you've finished, add some ng-shows to 'toggle' the input boxes for add, remove, and filter making sure you only show one at a time.
+<!-- * Create three buttons, Add Quote, Remove Quote, and Filter Quotes -->
+<!-- * Using ng-click and the methods we set up on our dataService object earlier, make those three buttons do the appropriate action. -->
+<!-- * Once you've finished, add some ng-shows to 'toggle' the input boxes for add, remove, and filter making sure you only show one at a time. -->
 
 ##Step 5: Persist your Quotes as a cookie in your browser
 * Look up how to use $cookieStore and the $cookieStore API - https://docs.angularjs.org/api/ngCookies/service/$cookieStore
 * Now instead of just pushing or splicing your quotes out of the array, use $cookieStore to persist that data as a cookie in your browser.
 
-<!--  -->
