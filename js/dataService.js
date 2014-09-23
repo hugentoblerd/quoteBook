@@ -16,7 +16,7 @@
   };
 
   this.addData = function (obj) {
-    if (obj.text) && (obj.author) {
+    if (obj.text && obj.author) {
       quotes.push(obj);
     }else if (obj.text) {
       obj.author = 'anonymous';
@@ -25,10 +25,9 @@
   };
 
   this.removeData = function (obj) {
-    for (var i = 0; i < quotes.length; i++) {
-      if (obj.text === quotes.text) {
-        quotes.splice(i, 1);
-      };
+    var i = quotes.indexOf(obj.text);
+    if (i !== -1) {
+      quotes.splice(i, 1);
     };
   };
 

@@ -33,7 +33,7 @@ The first step whenever you're setting up an Angular App is to set up your found
 
 
 ###Step 2: Set up your Angular Service
-<!-- The whole point of this repo is to get used to having your main data originating from a service and not a controller. Head over to your dataService.js file, 'get' the quoteBook module, then add a property of service (or factory) to the app. It's important to remember the differences between a 'factory' and 'service' in Angular because they don't behave the same. If you use app.factory() make sure you create an object, add properties to it, then return that object. If you use app.service(), you add properties to the 'this' keyword. More details here http://tylermcginnis.com/angularjs-factory-vs-service-vs-provider/ -->
+The whole point of this repo is to get used to having your main data originating from a service and not a controller. Head over to your dataService.js file, 'get' the quoteBook module, then add a property of service (or factory) to the app. It's important to remember the differences between a 'factory' and 'service' in Angular because they don't behave the same. If you use app.factory() make sure you create an object, add properties to it, then return that object. If you use app.service(), you add properties to the 'this' keyword. More details here http://tylermcginnis.com/angularjs-factory-vs-service-vs-provider/
 <!-- * After you've created a new service or factory and made sure you included the file in your index.html file, add the following data in your service. -->
 <!-- ```javascript -->
   <!-- var quotes = [ -->
@@ -58,9 +58,9 @@ The first step whenever you're setting up an Angular App is to set up your found
 
 ##Step 3: Add Data from your Service to your Controller and Display it
 Now that your service is set up, let's inject your service in to your controller then add that data to the scope of your controller, then display it in your view
-* Inject your dataService into your mainCtrl
-* Use the proper method on your dataService object to get the quotes array then add it to your $scope object in your mainCtrl
-* Once the quotes data is on your scope, use ng-repeat to loop over that data in  your index.html page and display it.
+<!-- * Inject your dataService into your mainCtrl -->
+<!-- * Use the proper method on your dataService object to get the quotes array then add it to your $scope object in your mainCtrl -->
+<!-- * Once the quotes data is on your scope, use ng-repeat to loop over that data in  your index.html page and display it. -->
 
 ##Step 4: Add Options to Filter, Add, and Remove Items from your Quotes Array
 * Create three buttons, Add Quote, Remove Quote, and Filter Quotes
